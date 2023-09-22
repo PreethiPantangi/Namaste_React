@@ -73,3 +73,16 @@ Browserslist is a package that allows the developers to specify which all web br
 ^ is used for in minor version upgrades and ~ is used for major verison upgrades.
 
 
+### Lesson 03 - Laying the foundation
+### Q. What is JSX?
+JSX is abbrivated as JavaScript XML, we use this to write HTML in React.
+
+### Q. What are the superpowers of JSX?
+JSX takes care of sanitizing the code and preventing cross site scripting 2. We can use any JS expressions in JSX using braces - {}
+
+### Q. Role of type attribute in the script tag? What options can I use there?
+The type attribute indicates the data represented by the script. The types can be one of the following module b. importmap
+
+### Q. "<Title>" vs "<Title/>" vs "{Title()}" in JSX?
+The above are all the ways of injecting a component inside another component
+
