@@ -1,6 +1,6 @@
 ### Namaste React By Akshay Saini
 
-### Lesson 01 - Inception
+## Lesson 01 - Inception
 ### Q. What is Emmet?
 Emmet is a plug-in in VS code that helps in providing snippets of code to help write code faster.
 
@@ -22,7 +22,7 @@ Development file is used for development purposes. It has Source Maps, Debugging
 ### Q. What are async and defer?
 When we use the async keyword the HTML is rendered when the script tag is encountered both html is rendered and JS file are fetched, once the file is fetched the execution of HTML stops and JS starts. Once this is done the HTML resumes rendering. When we use the defer keyword the HTML is rendered along with the script tag when encountered both html is rendered and JS file are fetched, and once the HTML is rendered then the JS file is executed.
 
-### Lesson 01 - Igniting Our App
+## Lesson 01 - Igniting Our App
 ### Q. What is NPM?
 NPM is everything but a node packager module. In the background it acts as a node packager manager.
 
@@ -73,7 +73,7 @@ Browserslist is a package that allows the developers to specify which all web br
 ^ is used for in minor version upgrades and ~ is used for major verison upgrades.
 
 
-### Lesson 03 - Laying the foundation
+## Lesson 03 - Laying the foundation
 ### Q. What is JSX?
 JSX is abbrivated as JavaScript XML, we use this to write HTML in React.
 
@@ -86,7 +86,7 @@ The type attribute indicates the data represented by the script. The types can b
 ### Q. "<Title>" vs "<Title/>" vs "{Title()}" in JSX?
 The above are all the ways of injecting a component inside another component
 
-### Lesson 04 - Talk is cheap, Show me the code
+## Lesson 04 - Talk is cheap, Show me the code
 ### Q. Is JSX mandatory for React?
 JSX is not mandatory for React. Using JSX is one way of creating dom elements we can also do that using React
 
@@ -140,7 +140,7 @@ Footer
     Address
     Contact 
 
-### Lesson 05 - Let's get Hooked
+## Lesson 05 - Let's get Hooked
 ### Q. What is the difference between named, default and * export?
 When we use default export we can only export one variable but when we want to the export multiple variables we use the named export.
 
