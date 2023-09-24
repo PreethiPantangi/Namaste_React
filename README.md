@@ -139,3 +139,16 @@ Footer
     Links
     Address
     Contact 
+
+### Lesson 05 - Let's get Hooked
+### Q. What is the difference between named, default and * export?
+When we use default export we can only export one variable but when we want to the export multiple variables we use the named export.
+
+### Q. What is the importance of config.js?
+This file has all the constants that we will be using in the application. Ex: LOGO_URL, CDN_URL, mockData etc.
+
+### Q. What are React Hooks?
+Hooks are javascript utility functions provided by React
+
+### Q. Why do we use the useState hook?
+Whenever there are some changes in the data and we want the UI to update accordingly we use the useState hook. Syntax : const [data, setData] = useState([])
