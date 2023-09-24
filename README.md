@@ -152,3 +152,40 @@ Hooks are javascript utility functions provided by React
 
 ### Q. Why do we use the useState hook?
 Whenever there are some changes in the data and we want the UI to update accordingly we use the useState hook. Syntax : const [data, setData] = useState([])
+
+## Lesson 06
+### Q. What is a Microservice?
+It is an architecture style where each service is loosely coupled. Meaning, the UI, backend, DB everything are a different service and we communicate with eath other through API's.
+
+### Q. What is monolith architecture?
+Monolith architecture is one where all of the code exists in the same application. UI, Backend, DB everything are at the same place.
+
+### Q. What is the difference between monolith and microservice architecture?
+Monolith architecture is developed as a single application where as microservice is smaller independent deployable services
+
+### Q. Why do we use the useEffect hook?
+We use the useEffect hook when we want to do something after our page is rendered. For example, When we want to fetch data after our UI is rendered.
+
+### Q. What is optional chaining?
+When we recieve response from servers the data is not straight forward in the JSON the data might be 5 levels down in the json structure. In that case we use optional chaining. Example: response?.data?.data?.data
+
+### Q. What is Shimmer UI?
+When we are fetching the data we might display it in form of cards or any other format. While the data is loading we show the user a loader and as soon as the data is available the data is displayed in a different format all of a sudden giving the user a bad experience. Shimmer UI is basically a skeleton shown on the UI while the data is being fetched.
+
+### Q. What is the difference between JS expression and JS statement?
+JS expression has a value which will be used to pass to a function as argument or normally used somewhere. JS statement has no value and is a declaration
+
+### Q. What is conditional rendering?
+Conditional rendering is when we have no data to show on the UI we might want to display some other kind of a UI.
+   Example:
+   return listOfRes.length === 0 ? (<ShimmerComponent/>) : (<RestaurantsComponent/>)
+
+### Q. What is CORS?
+CORS is abbrivated as Cross Origin Resource Sharing. It enables controlled access to the resources which are outside the domain
+
+### Q. What is async and await?
+Instead of using promise based chaining we use async and await enables asynchronous, promise based behaviour.
+
+### Q. What is the use of "const json = await data.json()"?
+When we make an API call the data that is received is a response object that represents the response to the request. The json method of the response object is an asynchronous method that returns a promise. By using the await keyword we can wait for the promise to resolve and get the actual JSON data.
+
