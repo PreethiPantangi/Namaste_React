@@ -86,3 +86,56 @@ The type attribute indicates the data represented by the script. The types can b
 ### Q. "<Title>" vs "<Title/>" vs "{Title()}" in JSX?
 The above are all the ways of injecting a component inside another component
 
+### Lesson 04 - Talk is cheap, Show me the code
+### Q. Is JSX mandatory for React?
+JSX is not mandatory for React. Using JSX is one way of creating dom elements we can also do that using React
+
+### Q. Is ES6 mandatory for React?
+It is not mandatory, there are other ways of using React without useing ES6 for example: mixins
+
+### Q. How can I write comments in JSX?
+We wrap the comments in {}. For single line comments we use // and for multi line /***/
+
+### Q. What is <React.Fragment></React.Fragment> and <></>?
+In react we can only have one parent element and if want to use two parent elements we will have to wrap it in an unnecessary div or span etc. To avoid this we have the React Fragment and <></>
+
+### Q. What is Virtual DOM?
+Virtual dom is a lightweight version of the real dom in JavaScript. It is much faster to update the virtual dom than real dom.
+
+### Q. What is Reconciliation in React?
+Reconciliation in react is a way of updating the dom. There is a process called diffing where react compares the DOM elements of the two root elements and if they are different the whole tree is torn down and a new one is built but if the root of the two elements are same for example if both of them are div then react only updates the attributes such as className, style etc.
+
+### Q. What is React Fiber?
+Fiber is the new reconciliation engine of React. The main goal of this is incremental rendering of virtual DOM. Basically we have to break down the work into units and fiber represents each unit.
+
+### Q. Why and When do we need keys in React?
+When we have aa list of items and we iterate over them to display the component in the DOM we need to have a unique key for each of them. If there is no unique key, whenever there is a new element added to the list the whole dom is re-rendered which is a costly operation.
+
+### Q. Can we use index as key in React?
+It is not recommened that we use index as key because initially the list might be ["A", "B", "C"] and the key for each is let's say 0,1,2 respectively. When a new element is added to the list ["D", "A", "B", "C"] the index changes from 0,1,2 for A,B,C to 0,1,2,3 for D,A,B,C. In this process the whole tree is re-rendered as the keys are not same from the previous dom elements
+
+### Q. What are props in react?
+We build Components so that we can reuse them. Let's say I have a card component and have n list of objects to show using the card. So using I will pass the object data to the component as argument and the data is received as props. Props are basically properties. props contain children, data etc.
+
+### Q. What is config driven UI?
+Config driven UI means the UI is built based on the response that is sent from the API. In amazon website let's say in one region I want to show the offers but in other I do not want to then the UI is rendered accordingly with config driven UI.
+
+### Food ordering app layout 
+
+Header
+    Logo
+    nav Items
+Body
+    Search
+    RestaurantContainer
+        RestaurantCard
+            img
+            name
+            rating
+            cuisine
+            eta
+Footer
+    Copyright
+    Links
+    Address
+    Contact 
