@@ -189,3 +189,23 @@ Instead of using promise based chaining we use async and await enables asynchron
 ### Q. What is the use of "const json = await data.json()"?
 When we make an API call the data that is received is a response object that represents the response to the request. The json method of the response object is an asynchronous method that returns a promise. By using the await keyword we can wait for the promise to resolve and get the actual JSON data.
 
+## Lesson 07 
+### Q. What are various ways to add images to our App? Explain with code examples.
+1. Images can we stored in the local folder of our application and be accessed
+2. By using CDN links
+3. Using the image URL
+
+### Q. What would happen if we do console.log(useState())?
+useState returns a value to store the data and a callback function to set/update the value.
+console.log(useState()) - [undefined, f()] 
+
+### Q. How will useEffect behave if we do not add a dependency array?
+1. If there is no dependency array then useEffect will be called everytime the component re-renders
+2. If we give an empty dependency array then the useEffect will be called only during the initial render of the component 
+3. If some value is passed to the dependency array then useEffect will be called only when the value is updated
+
+### Q. What is SPA?
+SPA is abbreviated a Single Page Application. It loads only a single page and updates whenever we navigate to another page.
+
+### Q. What is the difference between client side routing and server side routing?
+In Server side routing when a page is clicked an API call is made to fetch the file and then once the response is received the web page is loaded. In client side routing we have all the files at the client side and based on the navigation between pages we render the appropriate page. 
