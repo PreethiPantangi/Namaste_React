@@ -209,3 +209,58 @@ SPA is abbreviated a Single Page Application. It loads only a single page and up
 
 ### Q. What is the difference between client side routing and server side routing?
 In Server side routing when a page is clicked an API call is made to fetch the file and then once the response is received the web page is loaded. In client side routing we have all the files at the client side and based on the navigation between pages we render the appropriate page. 
+
+## Lesson 08
+### Q. How do you create nested routes react-router-dom configuration
+We can create nested routes inside a react router configuration using the createBrowserReact method where we pass an array of objects and specify the path and element. If we want to specify children for the route there is a key called "children" which we use and it again takes an array of objects with path and element.
+
+### Q. createHashRouter
+This is used when we are not able to configure our application properly and direct all the traffic towards our website. It just adds a "#" in the URL
+
+### Q. createMemoryRouter
+If we don't not want to use the browser history to navigate back and forth in the browser then we can use the createMemoryRouter which implements it's own stack of the traversed pages
+
+### Q. What is the order of the life cycle method calls in Class Based Component
+constructor, render, componentDidMount
+
+### Q. Why do we use componentDidMount()?
+We use componentDidMount to make fetch API calls or to show some data after we render the UI
+
+### Q. Why do we use componentWillUnMount? Show with example
+componentWillUnmount is called whenever we exit the page. This is used to clean up variables meaning anything that we created in componentDidMount. 
+Example:
+
+componentDidMount() {
+   const timer = setInterval(() => {
+      console.log("Hello");
+   }, 1000);
+}
+
+If we don't clean up the above the message Hello will be printed even after we navigate away from the page and once we get pack to the page a new interval is started. To avoid this we will clean up the interval in the componentWillUnmount method
+
+componentWillUnmount() {
+   clearInterval(timer)
+}
+
+### Q. Why do we use super(props) in constructor?
+When we use super in the constructore we inherit the props from parent component as well as any new props that the component has 
+
+### Q. Why can't use the async keyword for the callback function in useEffect()?
+useEffect is expected to return a function that we be called for clean-up purpose when the component unmounts. Making this callback async we will never be able to call the function.
+
+## Lesson 09
+
+### Q. When and why do we need lazy()?
+Considering the scenario in our Food deilvery application where we have food and grocery delivery. When we write the code and build it all of the code is bundled in one file and as the code increases the bundle becomems heavy and the application doesn't load fast. To avoid this we do lazy loading this basically loads the components when required. We use the lazy function provided by react to implement the lazy loading feature.
+
+### Q. What is suspense?
+Suspense is a component provided by react to dispay a fallback while your component is loading.
+
+### Q. Why did we get the error: A component suspended while responding to synchronous input. This will cause the UI to be replaced with a loading indicator. to fix, updates that suspend should be wrapped with startTransition? How does suspense fix this error?
+When we do not warp out component with Suspense we get the error. There is a param that we pass to the Suspense component called fallback which will be rendered when our component is still loading. 
+
+### Q. Advantages and Disadvantages of using code splitting pattern?
+To avoid creating huge bundles we do code splitting  
+
+### Q. When and why do we need suspense?
+When we lazy load our application, the file takes some time to load (ex: 10 secs) and as react is fast it throws us an error. To avoid that error we use the Suspense component provided by react to wrap our originial component.
