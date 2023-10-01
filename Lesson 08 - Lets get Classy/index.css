@@ -1,0 +1,428 @@
+body {
+    font-family: "Basis Grotesque Pro", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outlet {
+    margin: 0 10%;
+    margin-bottom: 10px;
+}
+
+.logo {
+    padding-left: 50%;
+    margin-top: 10px;  
+    cursor: pointer;
+}
+
+.nav-items > ul {
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.nav-items > ul > li{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav-items > ul > li:hover {
+    color: orange;
+}
+
+.filter {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-container-title {
+    padding: 5px;
+    margin: 5px;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: rgba(2, 6, 12, 0.92);
+}
+
+
+.res-container-filters > ul  {
+    list-style-type: none;
+    display: flex;
+}
+
+.res-container-filters > ul > li {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(193, 193, 197);
+    padding: 9px 12px;
+    width: auto;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px;
+    transition: background-color 0.1s ease-in 0s, border-color 0.1s ease-in 0s, box-shadow 0.1s ease-in 0s, width 0.2s cubic-bezier(0.65, 0, 0.35, 1) 0s;
+}
+
+.res-card {
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid transparent;
+    transition: transform 0.3s; 
+
+}
+
+.res-card:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.res-card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    height: 300px;
+    background-color: #D3D3D3;
+}
+
+.login-logout { 
+    width: 70px;
+}
+
+.search {
+    margin: 10px;
+}
+
+.filter-search {
+    display: flex;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.restaurant-image {
+    width: 200px;
+    height: 200px;
+}
+
+.loading {
+    margin: 20px 0;
+}
+
+.loading-text {
+    background-color: #282c3f;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+    font-family: "ProximaNova,arial,Helvetica Neue",sans-serif;
+}
+
+.link-comp {
+    text-decoration: none;
+    color: black;
+}
+
+.link-comp:hover {
+    color: orange;
+}
+
+.res-name {
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.res-other-details {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.restaurant_name {
+    font-size: 1.43rem;
+    font-weight: 600;
+    color: #282c3f;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.restaurant_otherDetails {
+    font-size: .93rem;
+    color: #7e808c;
+    /* height: calc(0.93rem + 2px); */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+.cost-details {
+    display: flex;
+    margin-top: 10px;
+}
+
+.cost {
+    margin-left: 20px;
+    color: #3e4152;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pure_veg_container {
+    margin-top: 50px;
+    display: flex;
+}
+
+.pure_veg {
+    width: 30px;
+    height: 30px;
+    margin-top: -3px;
+}
+
+.restaurant-menu-details {
+    margin-top: 50px;
+}
+
+.category {
+    color: #3e4152;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: "Basis Grotesque Pro", sans-serif;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.item_image {
+    position: relative;
+    display: inline-block;
+}
+
+.item_image_1 {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.divider {
+    border-bottom: 0.5px solid #d3d3d3;
+    height: 0.5px;
+    margin: 20px 0;
+}
+
+.addBtn {
+    background-color: white;
+    color: green;
+    border: 1px solid rgb(185, 185, 185);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addBtn1 {
+    background-color: white;
+    color: green;
+    border: 1px solid rgb(138, 137, 137);
+    border-radius: 6px;
+    transform: translate(-50%, -3%);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item_name {
+    margin-right: 4px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3e4152;
+    word-break: break-word;
+}
+
+.item_price {
+    margin-right: 8px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #3e4152;
+}
+
+.item_details {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.item_description {
+    margin-top: 14px;
+    line-height: 1.3;
+    color: rgba(40,44,63,.45);
+    letter-spacing: -.3px;
+    font-size: 1rem;
+    word-break: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bestseller_veg {
+    display: flex;
+}
+
+.bestseller {
+    line-height: 1rem;
+    font-size: 0.8rem;
+    color: #ee9c00;
+    font-weight: bold;
+    font-family: "Proxima,Nova,Condensed,Bold,arial,Helvetica Neue",sans-serif;
+    margin-top: -2px;
+}
+
+.green, .red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.five-pointed-star {
+    --star-color:#ee9c00;
+    font-size:0.7em;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+}
+.five-pointed-star:before {
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -0.45em;
+    left: -0.65em;
+    display: block;
+    content:"";
+    transform: rotate(-35deg);
+}
+.five-pointed-star:after {
+    position: absolute;
+    display: block;
+    top: 0.03em;
+    left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+    content:"";
+}
+
+.expand_collapse {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.accordion {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+    box-shadow: 0 0.25em 7px 0px #bebfc1, 0 4px 20px 5px rgba(185, 182, 182, 0.75);
+}
+
+.menu {
+    margin: 0 15%;
+    margin-bottom: 10px;
+}
+
+.user-card {
+    padding: 10px;
+    box-shadow: 0 0.25em 7px 0px #bebfc1, 0 4px 20px 5px rgba(185, 182, 182, 0.75);
+}
+
+.user-image {
+    border-radius: 50%;
+    height: 200px;
+}
