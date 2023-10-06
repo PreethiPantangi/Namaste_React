@@ -284,3 +284,21 @@ We configure tailwind using the following command "npm i tailwindcss postcss" an
 
 ### Q. Why do we have .postcssrc file?
 This file ensures during the build time that our tailwind css will be converted to normal css
+
+## Lesson 11 
+
+### Q. What is Prop Drilling?
+1. Prop drilling is the concept of passing data from parent - child - grandchild - great grand child and so on.
+2. Using prop drilling may cause issues in the app such as re-rendering the child component again even though there are no changes made in that particular component.
+
+### Q. What is lifting the state up?
+When the parent component manages the state of the child component it is called as lifting up the state.
+
+### Q. What are Context Provider and Consumer
+Let's say we want to access the logged in user information at multiple places in the application rather than doing prop drilling we can use Context Provider and Consumer. As the name suggests Provider provides the data to the application and Consumer utilizes it. 
+
+### Q. If we don't pass a value to provider will it consider the default value?
+No, Default value is only used when there is no matching provider for it.
+
+### To - Do
+1. Image optimization - All images are called at once
