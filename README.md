@@ -264,3 +264,23 @@ To avoid creating huge bundles we do code splitting
 
 ### Q. When and why do we need suspense?
 When we lazy load our application, the file takes some time to load (ex: 10 secs) and as react is fast it throws us an error. To avoid that error we use the Suspense component provided by react to wrap our originial component.
+
+## Lesson 10
+
+### Q. Explore all the ways of writing CSS
+1. Inline style - we write the styles in the tag itself
+2. Embedded style sheet - we write the style code in the style tag 
+3. External Style sheet - We write all the CSS in a file and import the file in HTML
+4. Frameworks - TailwindCSS
+
+### Q. How do we configure tailwind?
+We configure tailwind using the following command "npm i tailwindcss postcss" and "npx tailwindcss init"
+
+### Q. In tailwind.config.js what do all the keys content, theme, extend, plugins mean?
+1. Content - says files with what extension will be suing tail wind.
+2. Theme - We specify the color palette for our application
+3. Extend - This contains details about spacing, meaning setting '128' for 32 rem
+4. Plugins - These are used to register new styles for tailwind to inject into the user's stylesheet using JS instead of CSS 
+
+### Q. Why do we have .postcssrc file?
+This file ensures during the build time that our tailwind css will be converted to normal css
