@@ -1,0 +1,34 @@
+{
+  "name": "lesson-02---igniting-our-app",
+  "version": "1.0.0",
+  "description": "Namaste React By Akshay Saini",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PreethiPantangi/Namaste_React.git"
+  },
+  "author": "\"Preethi Pantangi\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PreethiPantangi/Namaste_React/issues"
+  },
+  "homepage": "https://github.com/PreethiPantangi/Namaste_React#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.31",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "browsersList": [
+    "last 2 Chrome version"
+  ]
+}
