@@ -300,5 +300,37 @@ Let's say we want to access the logged in user information at multiple places in
 ### Q. If we don't pass a value to provider will it consider the default value?
 No, Default value is only used when there is no matching provider for it.
 
+## Lesson 12 
+### Q. What is the difference between useContext vs Redux?
+useContext is a hook where Redux is a state management library
+
+### Q. Advantages of using Redux Toolkit over Redux
+1. Redux ToolKit solves various issues by providing a hook-based implementation of Redux
+2. RTK gives the ability to write mutable state updates in the reducers.
+3. It also eliminates the use of extra coding by providing boilerplates.
+4. RTK also has the feature of RTK query which eliminates the use of Thunks and makes the query processing faster
+5. It also provides automatic support for Redux Dev-tools Extension and for immer.js library which is a great tool to deal with immutable objects.
+6. You can also use the various predefined functions of Redux Toolkit which not only speeds up the process but also saves time.
+
+### Q. Explain Dispatcher
+We cannot directly modify the store. One step in modifying the store is dispatching an action
+
+### Q. Explain Reducer
+When the action is dispatched the reducer is called which them modifies the store
+
+### Q. Explain slice
+Store is one huge object and to create different categories or sections of data we use slices.
+
+### Q. Explain Selector
+TO display data from store to the UI we use something called selector. We subscribe to only the required slices from the store and use the data to display it on the UI.
+
+### Q. Explain createSlice and the configuration it takes.
+As the name suggests createSlice is a function that takes the following object 
+{
+   name: '',  //Name of the slice
+   initialState: {}, //Initial state of the slice 
+   reducers: {} //Reducers that will help modify the store
+}
+
 ### To - Do
 1. Image optimization - All images are called at once
